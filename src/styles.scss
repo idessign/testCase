@@ -1,1 +1,8 @@
-/* You can add global styles to this file, and also import other style files */
+// Import Bootstrap 4 styles
+@import '~bootstrap/dist/css/bootstrap.css';
+
+// Import variables
+@import 'styles/variables.scss';
+
+// Import Desktop 1600 styles
+@import 'styles/desktop.scss';

@@ -1,0 +1,37 @@
+// Colors
+$darkBlue: #00172b;
+$lightBlue: #00abff;
+$darkBlueBorder: #00203c;
+
+// Fonts
+@font-face {
+  font-family: 'Decima Nova Pro';
+  src: url('/assets/fonts/DecimaNovaPro.woff2') format('woff2'),
+  url('/assets/fonts/DecimaNovaPro.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Decima Nova Pro Bold';
+  src: url('/assets/fonts/DecimaNovaPro-Bold.woff2') format('woff2'),
+  url('/assets/fonts/DecimaNovaPro-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Decima Nova Pro Lt';
+  src: url('/assets/fonts/DecimaNovaProLt.woff2') format('woff2'),
+  url('/assets/fonts/DecimaNovaProLt.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'PT Serif';
+  src: url('/assets/fonts/PTSerif-Regular.woff2') format('woff2'),
+  url('/assets/fonts/PTSerif-Regular.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+}

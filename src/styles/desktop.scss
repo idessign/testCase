@@ -1,0 +1,90 @@
+body {
+
+}
+
+a {
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.container {
+  max-width: 1170px;
+  padding: 0;
+}
+
+header {
+  background: $darkBlue;
+  height: 354px;
+  border-top: 4px solid $lightBlue;
+
+  .logo-menu-container {
+    border-bottom: 1px solid $darkBlueBorder;
+
+    .main-menu {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      height: 66px;
+      font-family: "Decima Nova Pro Bold";
+      font-size: 14px;
+
+      a {
+        color: #fff;
+        display: flex;
+        margin: 0 0 0 44px;
+        text-transform: uppercase;
+
+        &:hover {
+          color: $lightBlue;
+        }
+
+        &:last-of-type {
+          justify-content: center;
+          align-items: center;
+          width: 120px;
+          height: 32px;
+          border: 1px solid #fff;
+          border-radius: 16px;
+        }
+      }
+    }
+  }
+
+  .main-title {
+    display: flex;
+    align-items: center;
+    height: 223px;
+    font-family: "PT Serif";
+    font-size: 48px;
+    line-height: 58px;
+    color: #fff;
+  }
+
+  .categories {
+    border-top: 1px solid $darkBlueBorder;
+
+    .categories-menu {
+      display: flex;
+      align-items: center;
+      font-family: "Decima Nova Pro Bold";
+
+      a {
+        color: #fff;
+        display: flex;
+        align-items: center;
+        height: 59px;
+        margin: 0  0 0;
+        padding: 0 20px;
+        text-transform: uppercase;
+        border-top: 4px solid transparent;
+        border-bottom: 4px solid transparent;
+
+        &:hover, &:active {
+          color: $lightBlue;
+          border-bottom: 4px solid $lightBlue;
+        }
+      }
+    }
+  }
+}

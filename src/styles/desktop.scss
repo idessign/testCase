@@ -1,5 +1,10 @@
 body {
+  font-family: "Decima Nova Pro";
+  font-size: 18px;
+}
 
+h1 {
+  @include pageTitle($darkBlue);
 }
 
 a {
@@ -35,7 +40,7 @@ a {
         margin: 0 0 0 44px;
         text-transform: uppercase;
 
-        &:hover {
+        &:hover, &.active {
           color: $lightBlue;
         }
 
@@ -46,6 +51,10 @@ a {
           height: 32px;
           border: 1px solid #fff;
           border-radius: 16px;
+
+          &:hover, &.active {
+            border-color: $lightBlue;
+          }
         }
       }
     }
@@ -230,9 +239,13 @@ a {
     text-align: center;
   }
 
-  button {
+  .button {
     @include enjoyArticleButton($lightBlue);
   }
+}
+
+.inner-page {
+  padding: 60px 0;
 }
 
 .footer {
@@ -299,7 +312,7 @@ a {
         margin-right: 26px;
         color: #fff;
 
-        &:hover {
+        &:hover, &.active {
           color: $lightBlue;
         }
       }

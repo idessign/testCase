@@ -1,3 +1,11 @@
+// Titles
+@mixin pageTitle($color) {
+  font-family: "PT Serif";
+  color: $color;
+  font-size: 54px;
+  margin-bottom: 40px;
+}
+
 // Main article button
 @mixin articleButton($color) {
   font-family: "Decima Nova Pro Lt";
@@ -13,6 +21,7 @@
   border: 1px solid $color;
 }
 
+// Enjoy article button
 @mixin enjoyArticleButton($color) {
   font-family: "Decima Nova Pro";
   font-size: 24px;

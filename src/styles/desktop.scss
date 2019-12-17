@@ -13,7 +13,7 @@ a {
   padding: 0;
 }
 
-header {
+.header {
   background: $darkBlue;
   height: 354px;
   border-top: 4px solid $lightBlue;
@@ -58,10 +58,12 @@ header {
     font-family: "PT Serif";
     font-size: 48px;
     line-height: 58px;
+    margin-top: -5px;
     color: #fff;
   }
 
   .categories {
+    margin-top: 5px;
     border-top: 1px solid $darkBlueBorder;
 
     .categories-menu {
@@ -79,10 +81,241 @@ header {
         text-transform: uppercase;
         border-top: 4px solid transparent;
         border-bottom: 4px solid transparent;
+        font-size: 14px;
 
-        &:hover, &:active {
+        &:hover, &.active {
           color: $lightBlue;
           border-bottom: 4px solid $lightBlue;
+        }
+      }
+    }
+  }
+}
+
+.main-article {
+  border-bottom: 1px solid #e1e1e1;
+  height: 266px;
+  position: relative;
+
+  .title {
+    font-family: "PT Serif";
+    color: $titleBlue;
+    font-size: 54px;
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  .description {
+    font-family: "Decima Nova Pro Lt";
+    font-size: 28px;
+    line-height: 38px;
+    text-align: center;
+    margin-top: 13px;
+  }
+
+  &:after {
+    content: '';
+    background: url("/assets/img/line_arrow.png") no-repeat 0 0;
+    display: block;
+    width: 50px;
+    height: 21px;
+    position: absolute;
+    bottom: -21px;
+    left: 50%;
+    transform: translateX(-25px);
+  }
+}
+
+.main-articles {
+  margin-top: 123px;
+
+  .row {
+    .article {
+      .title {
+        font-family: "PT Serif";
+        font-size: 36px;
+        color: $lightBlue;
+        text-align: center;
+        margin-top: 19px;
+        padding-right: 40px;
+      }
+
+      .description {
+        font-family: "Decima Nova Pro Lt";
+        font-size: 24px;
+        line-height: 34px;
+        text-align: center;
+        margin-top: 3px;
+        padding-right: 26px;
+      }
+
+      button {
+        @include articleButton($lightBlue);
+        margin: 15px auto 0 auto;
+        transform: translateX(-7px);
+      }
+
+      &:nth-of-type(2) {
+        .title {
+          padding-right: 0;
+          padding-left: 7px;
+        }
+
+        .description {
+          padding-right: 0;
+          padding-left: 19px;
+        }
+
+        button {
+          transform: translateX(8px);
+        }
+      }
+    }
+
+    &:nth-of-type(2) {
+      margin-top: 60px;
+
+      .article {
+        .title {
+          margin-top: 18px;
+          padding-right: 16px;
+        }
+
+        &:nth-of-type(2) {
+          .title {
+            padding-left: 32px;
+          }
+        }
+      }
+    }
+
+    &:nth-of-type(3) {
+      margin-top: 146px;
+
+      .article {
+        img {
+          margin-left: 34px;
+        }
+
+        .title {
+          margin-top: 17px;
+          padding-right: 0;
+          margin-left: 11px;
+        }
+
+        .description {
+          padding-right: 0;
+          padding-left: 2px;
+        }
+
+        button {
+          transform: translateX(2px);
+        }
+      }
+    }
+  }
+}
+
+.enjoy-article {
+  margin-top: 61px;
+  height: 373px;
+  border-top: 1px solid #e1e1e1;
+
+  .title {
+    margin-top: 50px;
+    font-family: "PT Serif";
+    font-size: 48px;
+    line-height: 58px;
+    color: $titleBlue;
+    text-align: center;
+  }
+
+  button {
+    @include enjoyArticleButton($lightBlue);
+  }
+}
+
+.footer {
+  height: 243px;
+  border-top: 4px solid $lightBlue;
+  background: $darkBlue;
+
+  .contacts {
+    color: #fff;
+    font-size: 16px;
+    line-height: 30px;
+
+    .department {
+      margin-top: 30px;
+      font-family: "Decima Nova Pro Lt";
+
+      .title {
+        font-size: 16px;
+        line-height: 24px;
+        margin-bottom: 6px;
+      }
+
+      .contact-data {
+        line-height: 24px;
+        font-size: 16px;
+
+        a {
+          color: $lightBlue;
+        }
+
+        .email {
+          font-size: 18px;
+        }
+
+        .phone {
+          font-size: 18px;
+        }
+      }
+    }
+  }
+
+  .info-menu-socials {
+    margin-top: 37px;
+    border-top: 1px solid #00203c;
+    color: #fff;
+
+    .copyright {
+      font-family: "Decima Nova Pro Lt";
+      height: 93px;
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+    }
+
+    .main-menu {
+      display: flex;
+      align-items: center;
+      height: 93px;
+      font-family: "Decima Nova Pro Lt";
+      margin: -2px 0 0 -3px;
+
+      a {
+        display: flex;
+        margin-right: 26px;
+        color: #fff;
+
+        &:hover {
+          color: $lightBlue;
+        }
+      }
+    }
+
+    .socials {
+      display: flex;
+      align-items: center;
+
+      a {
+        display: flex;
+        margin-top: -1px;
+        margin-right: 15px;
+
+        &:last-of-type {
+          transform: translateX(3px);
         }
       }
     }

@@ -2,7 +2,10 @@
 @import '~bootstrap/dist/css/bootstrap.css';
 
 // Import variables
-@import 'styles/variables.scss';
+@import 'styles/variables';
+
+// Import mixins
+@import 'styles/mixins';
 
 // Import Desktop 1600 styles
 @import 'styles/desktop.scss';

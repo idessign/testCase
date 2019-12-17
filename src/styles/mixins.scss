@@ -1,0 +1,29 @@
+// Main article button
+@mixin articleButton($color) {
+  font-family: "Decima Nova Pro Lt";
+  font-size: 16px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 176px;
+  height: 32px;
+  border-radius: 16px;
+  background: #fff;
+  color: $color;
+  border: 1px solid $color;
+}
+
+@mixin enjoyArticleButton($color) {
+  font-family: "Decima Nova Pro";
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 280px;
+  height: 50px;
+  border-radius: 25px;
+  background: $color;
+  color: #fff;
+  border: 0;
+  margin-top: 37px;
+}

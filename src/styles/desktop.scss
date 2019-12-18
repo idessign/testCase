@@ -158,7 +158,7 @@ a {
         padding-right: 26px;
       }
 
-      button {
+      .button {
         @include articleButton($lightBlue);
         margin: 15px auto 0 auto;
         transform: translateX(-7px);
@@ -175,7 +175,7 @@ a {
           padding-left: 19px;
         }
 
-        button {
+        .button {
           transform: translateX(8px);
         }
       }
@@ -217,7 +217,7 @@ a {
           padding-left: 2px;
         }
 
-        button {
+        .button {
           transform: translateX(2px);
         }
       }
@@ -311,6 +311,7 @@ a {
         display: flex;
         margin-right: 26px;
         color: #fff;
+        font-size: 16px;
 
         &:hover, &.active {
           color: $lightBlue;

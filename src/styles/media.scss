@@ -1,0 +1,138 @@
+@media only screen and (max-width: 992px) {
+  .container {
+    padding: 0 20px;
+  }
+
+  .header {
+    height: 411px;
+
+    .main-title {
+      height: 280px;
+    }
+  }
+
+  .main-article {
+    height: 262px;
+
+    .title {
+      font-size: 48px;
+      margin-top: 43px;
+    }
+  }
+
+  .main-articles {
+    margin-top: 108px;
+
+    .row {
+      .article {
+        img {
+          width: 480px;
+          margin-left: -13px;
+        }
+
+        .title {
+          padding-right: 10px;
+        }
+
+        .description {
+          padding-right: 12px;
+        }
+
+        .button {
+          transform: translateX(-4px);
+        }
+
+        &:nth-of-type(2) {
+          img {
+            margin-left: -4px;
+          }
+
+          .description {
+            padding-left: 9px;
+            padding-right: 3px;
+          }
+
+          .button {
+            transform: translateX(5px);
+          }
+        }
+      }
+
+      &:nth-of-type(2) {
+        .article {
+          img {
+            margin-top: -4px;
+            margin-left: -12px;
+          }
+
+          .title {
+            margin-top: 16px;
+            padding-right: 11px;
+          }
+
+          .description {
+
+          }
+
+          .button {
+            margin-top: 16px;
+          }
+
+          &:nth-of-type(2) {
+            img {
+              margin-left: -5px;
+            }
+
+            .title {
+              padding-left: 20px;
+            }
+
+            .description {
+
+            }
+
+            .button {
+
+            }
+          }
+        }
+      }
+
+      &:nth-of-type(3) {
+        margin-top: 129px;
+
+        .article {
+          img {
+            width: 424px;
+            margin-left: 22px;
+          }
+
+          .title {
+            margin-left: 6px;
+          }
+
+          .description {
+            padding-left: 9px;
+            padding-right: 16px;
+          }
+
+          .button {
+            transform: translateX(0px);
+          }
+        }
+      }
+    }
+  }
+
+  .enjoy-article {
+    height: 431px;
+  }
+
+  .footer .contacts .department {
+
+  }
+}
+
+@media only screen and (max-width: 576px) {
+
+}

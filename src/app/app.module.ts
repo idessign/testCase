@@ -9,6 +9,11 @@ import { ServicesComponent } from './services/services.component';
 import { ExpertiseComponent } from './expertise/expertise.component';
 import { AboutComponent } from './about/about.component';
 import { ContactsComponent } from './contacts/contacts.component';
+import { MobileAppsComponent } from './services/mobile-apps/mobile-apps.component';
+import { WebServiceComponent } from './services/web-service/web-service.component';
+import { AugmentedRealityComponent } from './services/augmented-reality/augmented-reality.component';
+import { UxUiDesignComponent } from './services/ux-ui-design/ux-ui-design.component';
+import { DevelopmentComponent } from './services/development/development.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +23,12 @@ import { ContactsComponent } from './contacts/contacts.component';
     ServicesComponent,
     ExpertiseComponent,
     AboutComponent,
-    ContactsComponent
+    ContactsComponent,
+    MobileAppsComponent,
+    WebServiceComponent,
+    AugmentedRealityComponent,
+    UxUiDesignComponent,
+    DevelopmentComponent
   ],
   imports: [
     BrowserModule,

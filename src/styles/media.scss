@@ -379,3 +379,15 @@
     }
   }
 }
+
+@media only screen and (min-width: 375px) and (max-width: 768px) {
+  .main-articles {
+    .row {
+      .article:nth-of-type(2) {
+        img {
+          margin-left: -12px;
+        }
+      }
+    }
+  }
+}

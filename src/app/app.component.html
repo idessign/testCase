@@ -3,9 +3,9 @@
     <div class="container">
       <div class="row no-gutters">
         <div class="col-4">
-          <a routerLink="/"><img src="/assets/img/logo.png" alt="Trinetix"></a>
+          <a routerLink="/" class="logo"><img src="/assets/img/logo.png" alt="Trinetix"></a>
         </div>
-        <div class="col-8">
+        <div class="d-none d-sm-block col-8">
           <nav class="main-menu">
             <a routerLink="/case_studies" routerLinkActive="active">Case Studies</a>
             <a routerLink="/services" routerLinkActive="active">Services</a>
@@ -37,11 +37,26 @@
         <div class="col-12">
           <nav class="categories-menu">
             <a routerLink="/">all</a>
-            <a routerLink="/services/mobile_apps" routerLinkActive="active">mobile apps</a>
-            <a routerLink="/services/web_srvices" routerLinkActive="active">web services</a>
-            <a routerLink="/services/augmented_reality" routerLinkActive="active">augmented reality</a>
-            <a routerLink="/services/ux_ui_design" routerLinkActive="active">ux/ui design</a>
-            <a routerLink="/services/development" routerLinkActive="active">development</a>
+            <a routerLink="/services/mobile_apps" routerLinkActive="active">
+              <div class="d-none d-sm-block">mobile apps</div>
+              <div class="d-block d-sm-none">mobile</div>
+            </a>
+            <a routerLink="/services/web_srvices" routerLinkActive="active">
+              <div class="d-none d-sm-block">web services</div>
+              <div class="d-block d-sm-none">web</div>
+            </a>
+            <a routerLink="/services/augmented_reality" routerLinkActive="active">
+              <div class="d-none d-sm-block">augmented reality</div>
+              <div class="d-block d-sm-none">ar</div>
+            </a>
+            <a routerLink="/services/ux_ui_design" routerLinkActive="active">
+              <div class="d-none d-sm-block">ux/ui design</div>
+              <div class="d-block d-sm-none">ux/ui</div>
+            </a>
+            <a routerLink="/services/development" routerLinkActive="active">
+              <div class="d-none d-sm-block">development</div>
+              <div class="d-block d-sm-none">dev</div>
+            </a>
           </nav>
         </div>
       </div>
@@ -56,7 +71,7 @@
     <div class="row no-gutters contacts">
       <div class="col-12">
         <div class="row">
-          <div class="department col-3">
+          <div class="department col-xs-12 col-sm-3">
             <div class="title">Headquarters:</div>
             <div class="contact-data">
               11 E. Chavdar Street, Office 222,<br/>
@@ -64,7 +79,7 @@
             </div>
           </div>
 
-          <div class="department col-3">
+          <div class="department col-xs-6 col-sm-3">
             <div class="title">USA:</div>
             <div class="contact-data">
               <a href="mailto:usa.hr@trinetix.com" class="email">usa.hr@trinetix.com</a>
@@ -72,7 +87,7 @@
             </div>
           </div>
 
-          <div class="department col-3">
+          <div class="department col-xs-6 col-sm-3">
             <div class="title">Ukraine:</div>
             <div class="contact-data">
               <a href="mailto:ua.hr@trinetix.com" class="email">ua.hr@trinetix.com</a>
@@ -87,11 +102,11 @@
   <div class="info-menu-socials">
     <div class="container">
       <div class="row">
-        <div class="copyright col-3">
+        <div class="copyright col-xs-12 col-sm-3">
           © 2010-2015 Trinetix LLC
         </div>
 
-        <div class="department col-6">
+        <div class="department d-none d-sm-block col-xs-12 col-md-7 col-lg-6">
           <nav class="main-menu">
             <a routerLink="/">Home</a>
             <a routerLink="/case_studies" routerLinkActive="active">Case Studies</a>
@@ -102,7 +117,7 @@
           </nav>
         </div>
 
-        <div class="socials col-3">
+        <div class="socials col-xs-12 col-md-2 col-lg-3">
           <a href="#"><img src="/assets/img/socials/fb.png" alt="Facebook"></a>
           <a href="#"><img src="/assets/img/socials/in.png" alt="Linkedin"></a>
           <a href="#"><img src="/assets/img/socials/g-plus.png" alt="G+"></a>

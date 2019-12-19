@@ -207,37 +207,172 @@
   }
 
   .main-articles {
+    margin-top: 67px;
+
     .row {
       .article {
         img {
-          width: 200px;
+          width: 329px;
           margin-left: -13px;
         }
 
         .title {
-
+          font-size: 28px;
+          margin-top: 12px;
+          padding-right: 0;
         }
 
         .description {
-
+          font-size: 20px;
+          line-height: 30px;
+          margin-top: 2px;
+          padding: 0;
         }
 
         .button {
+          transform: translateX(0px);
+        }
 
+        &:nth-of-type(2) {
+          img {
+            margin-top: 50px;
+            width: 358px;
+            margin-left: -37px;
+          }
+
+          .title {
+            margin-top: 15px;
+            margin-left: -5px;
+          }
+
+          .description {
+            padding-left: 0;
+            padding-right: 0;
+          }
+
+          .button {
+            transform: translateX(0px);
+          }
+        }
+      }
+
+      &:nth-of-type(2) {
+        .article {
+          img {
+            width: 314px;
+            margin-top: -13px;
+            margin-left: -6px;
+          }
+
+          .title {
+            margin-top: 8px;
+            padding-right: 1px;
+          }
+
+          &:nth-of-type(2) {
+            img {
+              width: 297px;
+              margin-top: 52px;
+              margin-left: -1px;
+            }
+
+            .title {
+              margin-top: 12px;
+              margin-left: -18px;
+            }
+          }
         }
       }
 
       &:nth-of-type(3) {
+        margin-top: 66px;
+
         .article {
           img {
-            width: 200px;
+            width: 316px;
+            margin-left: -11px;
+          }
+
+          .title {
+            margin-top: 12px;
+            margin-left: 0;
+          }
+
+          .description {
+            margin-left: -1px;
+            padding-left: 0;
+            padding-right: 0;
+          }
+
+          .button {
+            margin-top: 17px;
           }
         }
       }
     }
   }
 
+  .enjoy-article {
+    margin-top: 40px;
+    height: auto;
+
+    .title {
+      font-size: 20px;
+      line-height: 30px;
+      margin-top: 31px;
+      margin-left: -5px;
+    }
+
+    footer {
+      margin: -2px 0 0 -6px;
+    }
+  }
+
   .footer {
     height: auto;
+    margin-top: 41px;
+
+    .contacts {
+      .department {
+        margin-top: 20px;
+        padding-top: 0;
+
+        .contact-data {
+          line-height: 25px;
+
+          .email {
+            font-size: 16px;
+          }
+
+          .phone {
+            font-size: 16px;
+          }
+        }
+
+        &:nth-of-type(2) {
+          padding-top: 2px;
+          padding-left: 15px;
+        }
+
+        &:nth-of-type(3) {
+          padding-top: 2px;
+          padding-left: 9px;
+        }
+      }
+    }
+
+    .info-menu-socials {
+      margin-top: 22px;
+      padding: 20px 0 0 0;
+
+      .socials {
+        margin: 0;
+      }
+
+      .copyright {
+        order: 2;
+        height: 56px;
+      }
+    }
   }
 }

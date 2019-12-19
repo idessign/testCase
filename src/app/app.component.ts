@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'test-case';
+
+  classApplied = false;
+
+  toggleClass() {
+    this.classApplied = !this.classApplied;
+  }
 }

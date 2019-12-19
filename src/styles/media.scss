@@ -153,12 +153,21 @@
   .container {
     padding: 0 14px;
   }
+
   .header {
     height: auto;
 
-    .logo {
-      img {
-        margin-bottom: -2px;
+    .logo-menu-container {
+      .logo {
+        img {
+          margin-bottom: -2px;
+        }
+      }
+
+      .menu {
+        position: absolute;
+        top: 19px;
+        right: 14px;
       }
     }
 

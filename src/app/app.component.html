@@ -1,3 +1,20 @@
+<div class="mobile-menu" [class.active]="classApplied">
+  <div class="close" (click)="toggleClass()">Close menu</div>
+
+  <div class="container">
+    <div class="row no-gutters">
+      <nav class="main-menu">
+        <a routerLink="/" (click)="toggleClass()">Home</a>
+        <a routerLink="/case_studies" routerLinkActive="active" (click)="toggleClass()">Case Studies</a>
+        <a routerLink="/services" routerLinkActive="active" (click)="toggleClass()">Services</a>
+        <a routerLink="/expertise" routerLinkActive="active" (click)="toggleClass()">Expertise</a>
+        <a routerLink="/about" routerLinkActive="active" (click)="toggleClass()">About</a>
+        <a routerLink="/contacts" routerLinkActive="active" (click)="toggleClass()">Contact us</a>
+      </nav>
+    </div>
+  </div>
+</div>
+
 <header class="header">
   <div class="logo-menu-container">
     <div class="container">
@@ -13,6 +30,9 @@
             <a routerLink="/about" routerLinkActive="active">About</a>
             <a routerLink="/contacts" routerLinkActive="active">Contact us</a>
           </nav>
+        </div>
+        <div class="menu d-block d-sm-none">
+          <img src="/assets/img/icons/menu_icon.png" alt="Menu" (click)="toggleClass()">
         </div>
       </div>
     </div>
